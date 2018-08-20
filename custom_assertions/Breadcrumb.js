@@ -15,7 +15,6 @@ Breadcrumb = function(expression) {
     };
 
     this.command = (callback) => {
-        
         return this.api.source(function(result){
             $ = cheerio.load(result.value)
             var scripts = $("#pd_bread")

@@ -12,7 +12,11 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
                 .resizeWindow(400, 400)
                 .url(current_query["url"])
                 .waitForElementVisible('body', 1000)
-                .assert.CheckTitle(current_query["check"])
+                .source(function(res){
+                    current_query["check"].map((v,i)=>{
+                        browser.assert.CheckTitle(v)
+                    })
+                })
                 .pause(100)
                 .end()
         },

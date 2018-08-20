@@ -1,7 +1,7 @@
 exports.structured_urls = {
     "product_page": {
         "url": "https://www.bewakoof.com/p/pine-green-boyfriend-t-shirt-for-women?src=collection",
-        "check": ["BreadcrumbList", "Organization", "Product","Error"],
+        "check": ["BreadcrumbList", "Organization", "Product"],
         "tags":"PRODUCT PAGE"
     },
     "category_page": {
