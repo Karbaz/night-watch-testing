@@ -1,0 +1,40 @@
+// "headless", "no-sandbox", "disable-gpu"
+
+"chromeOptions": 
+{
+"args": [
+"disable-web-security",
+"ignore-certificate-errors",
+"--test-type",
+"start-fullscreen",
+// "headless", "no-sandbox", "disable-gpu"    // run withoutchrome running
+],
+"prefs" : {
+"credentials_enable_service" : false,
+"profile.password_manager_enabled" : false
+}
+}
+
+
+var seo_urls = require("../config/seo_urls")
+var seo_test_cases = {};
+
+seo_urls.seo_urls.map((value,index)=>{
+    Object.keys(value).map((testValue,testIndex)=>{
+        let copy = Object.assign({
+            '@tags':[index == 1 ? "Example" : "Test_"+index.toString()],
+            [value[testValue]['tag']]:function(browser){
+                browser
+                .resizeWindow(400, 400)
+                .url(value[testValue]['url'])
+                .waitForElementVisible('body', 1000)
+                .verify.attributeEquals("meta[name=description]", "content", value[testValue]['desc'])
+                .verify.title(value[testValue]['title'],"")
+                .end()
+            },
+        },seo_test_cases)
+        seo_test_cases=copy;
+    })
+})
+
+exports.module= seo_test_cases;

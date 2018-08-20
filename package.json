@@ -1,0 +1,27 @@
+{
+  "name": "node-seo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crawer.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cheerio": "^1.0.0-rc.2",
+    "concurrently": "^3.6.1",
+    "nightwatch": "^0.9.21"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start_structure_data": "node nightwatch structured_data/structured_data.js -e chrome",
+    "start_canonical_link": "node nightwatch canonical_link/index.js -e chrome",
+    "start_tag_counter": " node nightwatch tags_counter/index.js -e chrome ",
+    "start_bread_crumb": "node nightwatch Breadcrumb/index.js -e chrome",
+    "start_all": "concurrently \"npm run start_structure_data\" \"npm run start_tag_counter\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

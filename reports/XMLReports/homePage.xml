@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="homePage"
+    errors="1" failures="0" hostname="" id="" package="homePage" skipped="0"
+    tests="1" time="0.004000" timestamp="Thu, 09 Aug 2018 09:25:40 GMT">
+  
+    <testcase name="Search page testing" classname="homePage" time="0.004000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Home Page / Search page testing]:
+
+  ReferenceError: homePage is not defined
+    at Object.Search page testing (/Users/arbazkhan/Desktop/node-seo/pages/homePage.js:6:21)
+    at Module.call (/Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:796:13)
+    at /Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:556:49
+    at runSingle (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:137:13)
+    at flush (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:176:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
