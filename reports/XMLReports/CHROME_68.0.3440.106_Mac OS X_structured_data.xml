@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="5">
 
   <testsuite name="structured_data"
-    errors="0" failures="0" hostname="" id="" package="structured_data" skipped="0"
-    tests="5" time="23.96" timestamp="Mon, 20 Aug 2018 06:13:01 GMT">
+    errors="0" failures="1" hostname="" id="" package="structured_data" skipped="4"
+    tests="5" time="4.244" timestamp="Tue, 21 Aug 2018 05:42:59 GMT">
   
-    <testcase name="5: ALL PAGES" classname="structured_data" time="4.986" assertions="2">
+    <testcase name="5: ALL PAGES" classname="structured_data" time="4.244" assertions="2">
 
-    
-
-    
-    </testcase>
-  
-    <testcase name="4: MOBILE BRAND PAGE" classname="structured_data" time="4.133" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="3: MOBILE PAGE" classname="structured_data" time="3.198" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="2: CATEGORY PAGE" classname="structured_data" time="7.890" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="1: PRODUCT PAGE" classname="structured_data" time="3.758" assertions="4">
-
-    
-
-    
-
-    
+      <failure message="Failed [ok]: (undefined == true)">    at current_query.check.map (/Users/arbazkhan/Desktop/node-seo/structured_data/structured_data.js:17:40)
+    at Array.map (&lt;anonymous&gt;)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/structured_data/structured_data.js:16:44)</failure>
 
     
     </testcase>
@@ -55,6 +19,28 @@
 
   
 
+  
+    
+    <testcase
+      name="4: MOBILE BRAND PAGE" classname="structured_data">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="3: MOBILE PAGE" classname="structured_data">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="2: CATEGORY PAGE" classname="structured_data">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="1: PRODUCT PAGE" classname="structured_data">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>
