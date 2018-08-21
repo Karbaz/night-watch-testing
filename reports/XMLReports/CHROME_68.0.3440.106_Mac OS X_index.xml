@@ -1,38 +1,173 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="1"
-            tests="4">
+            tests="1">
 
   <testsuite name="index"
-    errors="0" failures="1" hostname="" id="" package="index" skipped="2"
-    tests="4" time="8.273" timestamp="Mon, 20 Aug 2018 05:39:48 GMT">
+    errors="0" failures="1" hostname="" id="" package="index" skipped="0"
+    tests="1" time="5.490" timestamp="Tue, 21 Aug 2018 05:17:02 GMT">
   
-    <testcase name="4: BEWAKOOF HOME PAGE" classname="index" time="4.622" assertions="1">
+    <testcase name="1: ALL PAGES" classname="index" time="5.490" assertions="63">
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/logos/bewakoof-logo-og.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/dotd-navigation-1523605975.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/flash-navigation-icon-1534479686.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/cotm-navigation-icon-1533061481.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/factory-outlet-new-navigation-icon-1532609509.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/bestseller-men-1519296358.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/marathi-design-navigation-1526457581.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/new-navigation-men-image3-1534588707.jpg)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/dotd-navigation-1523605975.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/flash-navigation-icon-1534479686.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/cotm-navigation-icon-1533061481.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/factory-outlet-new-navigation-icon-1532609509.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/bestsellers-women-1519294555.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/marathi-design-navigation-1526457581.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/new-navigation-women-image3-1534588708.jpg)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/design-of-the-day-drop-down-1521438288.jpg)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/the-outlet-drop-down-1-1532605206.jpg)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/nav_menu/mobile-cover-navigation-image3-1534588706.jpg)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/logos/bewakoof-logo-og.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/banner/Screen-Shot-2017-08-17-at-11-48-05-AM-1502950739.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/banner/Screen-Shot-2017-08-17-at-11-48-05-AM-1502950739.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+    
+
+    
+
+    
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/banner/Screen-Shot-2017-08-17-at-11-48-05-AM-1502950739.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+    
+
+    
+
+    
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/banner/Screen-Shot-2017-08-17-at-11-48-05-AM-1502950739.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+    
+
+    
+
+    
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/web/group-3-2x.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/web/app_android_v1.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/web/app_ios_v1.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/web/secure_payments_neww.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://images.bewakoof.com/web/secure_payments_neww.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
+
+      <failure message="Failed [ok]: (https://bat.bing.com/action/0?ti=5175641&amp;Ver=2&amp;mid=3bf168ad-87df-67c0-5052-259e215c80fc&amp;pi=1200101525&amp;lg=en-US&amp;sw=1440&amp;sh=900&amp;sc=24&amp;tl=Online%20Fashion%20Shopping%20for%20Men,%20Women,%20Accessories%20-%20Bewakoof.com&amp;p=https%3A%2F%2Fwww.bewakoof.com%2F&amp;r=&amp;lt=1893&amp;evt=pageLoad&amp;msclkid=N&amp;rn=634182)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
 
     
     </testcase>
   
-    <testcase name="3: COLOR OF THE MONTH" classname="index" time="3.651" assertions="1">  <failure message="Timed out while waiting for element &lt;body&gt; to be present for 1000 milliseconds.">    at Object.3: COLOR OF THE MONTH (/Users/arbazkhan/Desktop/node-seo/canonical_link/index.js:12:21)
-    at process._tickCallback (internal/process/next_tick.js:176:11)</failure>
-
-    
-    </testcase>
-  
 
   
 
-  
-    
-    <testcase
-      name="2: CATEGORY PAGE" classname="index">
-      <skipped />
-    </testcase>
-    
-    <testcase
-      name="1: PRODUCT PAGE" classname="index">
-      <skipped />
-    </testcase>
-    
   
   </testsuite>
 </testsuites>
