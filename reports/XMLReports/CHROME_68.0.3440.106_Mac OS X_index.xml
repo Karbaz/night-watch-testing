@@ -5,9 +5,9 @@
 
   <testsuite name="index"
     errors="0" failures="1" hostname="" id="" package="index" skipped="0"
-    tests="1" time="6.580" timestamp="Tue, 21 Aug 2018 05:38:16 GMT">
+    tests="1" time="6.695" timestamp="Tue, 21 Aug 2018 05:39:39 GMT">
   
-    <testcase name="1: ALL PAGES" classname="index" time="6.580" assertions="63">
+    <testcase name="1: ALL PAGES" classname="index" time="6.695" assertions="63">
 
       <failure message="Failed [ok]: (https://images.bewakoof.com/logos/bewakoof-logo-og.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
     at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
@@ -159,7 +159,7 @@
       <failure message="Failed [ok]: (https://images.bewakoof.com/web/secure_payments_neww.png)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
     at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
 
-      <failure message="Failed [ok]: (https://bat.bing.com/action/0?ti=5175641&amp;Ver=2&amp;mid=584dae4d-f1c1-5594-296c-29b09cbadc6a&amp;pi=1200101525&amp;lg=en-US&amp;sw=1440&amp;sh=900&amp;sc=24&amp;tl=Online%20Fashion%20Shopping%20for%20Men,%20Women,%20Accessories%20-%20Bewakoof.com&amp;p=https%3A%2F%2Fwww.bewakoof.com%2F&amp;r=&amp;lt=2736&amp;evt=pageLoad&amp;msclkid=N&amp;rn=517075)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
+      <failure message="Failed [ok]: (https://bat.bing.com/action/0?ti=5175641&amp;Ver=2&amp;mid=d665a384-0c0c-05ae-0ae6-f9df5e984b5d&amp;pi=1200101525&amp;lg=en-US&amp;sw=1440&amp;sh=900&amp;sc=24&amp;tl=Online%20Fashion%20Shopping%20for%20Men,%20Women,%20Accessories%20-%20Bewakoof.com&amp;p=https%3A%2F%2Fwww.bewakoof.com%2F&amp;r=&amp;lt=2655&amp;evt=pageLoad&amp;msclkid=N&amp;rn=568466)">    at Node.scripts.map (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:19:37)
     at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/images_title/index.js:17:25)</failure>
 
     
