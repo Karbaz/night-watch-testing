@@ -1,7 +1,5 @@
 var structured_urls = require("./urls")
-var cheerio = require("cheerio")
 var seo_test_cases = {};
-
 
 Object.keys(structured_urls.structured_urls).map((value, index) => {
     let current_query = structured_urls.structured_urls[value]

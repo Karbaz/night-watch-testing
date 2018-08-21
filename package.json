@@ -8,6 +8,7 @@
     "test": "tests"
   },
   "dependencies": {
+    "assert": "^1.4.1",
     "chai": "^4.1.2",
     "cheerio": "^1.0.0-rc.2",
     "concurrently": "^3.6.1",
@@ -19,6 +20,7 @@
     "start_canonical_link": "node nightwatch canonical_link/index.js -e chrome",
     "start_tag_counter": " node nightwatch tags_counter/index.js -e chrome ",
     "start_bread_crumb": "node nightwatch Breadcrumb/index.js -e chrome",
+    "start_img_tags" : "node nightwatch images_title/index.js -e chrome",
     "start_all": "concurrently \"npm run start_structure_data\" \"npm run start_tag_counter\" "
   },
   "keywords": [],
