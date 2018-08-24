@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="0"
-            tests="1">
+            tests="5">
 
   <testsuite name="index"
-    errors="1" failures="0" hostname="" id="" package="index" skipped="0"
-    tests="1" time="0.005000" timestamp="Mon, 20 Aug 2018 05:22:24 GMT">
+    errors="1" failures="0" hostname="" id="" package="index" skipped="4"
+    tests="5" time="0.004000" timestamp="Tue, 21 Aug 2018 06:17:55 GMT">
   
-    <testcase name="1: CHECKING FOR BreadCrumb" classname="index" time="0.005000" assertions="0">
+    <testcase name="5: ALL PAGES" classname="index" time="0.004000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [Index / 1: CHECKING FOR BreadCrumb]:
+        Error while running [Index / 5: ALL PAGES]:
 
-  ReferenceError: getAttribute is not defined
-    at Object.1: CHECKING FOR BreadCrumb (/Users/arbazkhan/Desktop/node-seo/Breadcrumb/index.js:14:13)
+  ReferenceError: expect is not defined
+    at Object.5: ALL PAGES (/Users/arbazkhan/Desktop/node-seo/tags_counter/index.js:13:13)
     at Module.call (/Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:834:54)
@@ -29,6 +29,28 @@
     </system-err>
   
 
+  
+    
+    <testcase
+      name="4: MOBILE BRAND PAGE" classname="index">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="3: MOBILE PAGE" classname="index">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="2: CATEGORY PAGE" classname="index">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="1: PRODUCT PAGE" classname="index">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

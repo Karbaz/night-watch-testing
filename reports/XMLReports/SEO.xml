@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="0"
-            tests="1">
+            tests="2">
 
   <testsuite name="SEO"
-    errors="1" failures="0" hostname="" id="" package="SEO" skipped="0"
-    tests="1" time="0.006000" timestamp="Tue, 14 Aug 2018 05:48:43 GMT">
+    errors="1" failures="0" hostname="" id="" package="SEO" skipped="1"
+    tests="2" time="0.005000" timestamp="Fri, 24 Aug 2018 07:03:13 GMT">
   
-    <testcase name="HOME_PAGE" classname="SEO" time="0.006000" assertions="0">
+    <testcase name="HOME_PAGE" classname="SEO" time="0.005000" assertions="0">
     </testcase>
   
 
@@ -15,8 +15,8 @@
     <system-err>
         Error while running [SEO / HOME_PAGE]:
 
-  TypeError: browser.expect.element(...).to.be.present.end is not a function
-    at Object.HOME_PAGE (/Users/arbazkhan/Desktop/node-seo/seo/SEO.js:29:22)
+  TypeError: browser.assert.element is not a function
+    at Object.HOME_PAGE (/Users/arbazkhan/Desktop/node-seo/seo/SEO.js:12:32)
     at Module.call (/Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:834:54)
@@ -29,6 +29,13 @@
     </system-err>
   
 
+  
+    
+    <testcase
+      name="MOBILE_LANDING_PAGE" classname="SEO">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>
