@@ -1,7 +1,7 @@
 var cheerio = require("cheerio");
 var structured_urls = require("../Breadcrumb/urls");
 
-Breadcrumb = function(expression) {
+Breadcrumb = function (expression) {
     this.message = `Expected Number Of BreadCrumb ${expression}`;
 
     this.expected = expression;
@@ -15,11 +15,13 @@ Breadcrumb = function(expression) {
     };
 
     this.command = (callback) => {
-        return this.api.source(function(result){
+        return this.api.source(function (result) {
             $ = cheerio.load(result.value)
             var scripts = $("#pd_bread")
-            let counter = scripts[0]["children"].length
-            callback(counter)
+            if (scripts[0] && scripts[0]["children"]) {
+                let counter = scripts[0]["children"].length
+                callback(counter)
+            }
         });
     };
 };

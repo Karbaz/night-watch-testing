@@ -36,10 +36,7 @@
               "acceptSslCerts" : true,
               "chromeOptions": {
                 "args": [
-                  "disable-web-security",
-                 "ignore-certificate-errors",
-                 "--test-type",
-                 "start-fullscreen"
+                 "headless", "no-sandbox", "disable-gpu"
                 ],
                 "prefs" : {
                   "credentials_enable_service" : false,

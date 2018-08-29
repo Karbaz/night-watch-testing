@@ -25,13 +25,12 @@
                         temp_script = JSON.parse(v["children"][0]["data"])
                         if (expression == temp_script["@type"]) {
                             check=true;
-                            callback(temp_script["@type"])
+                            this.verify.equal(expression,temp_script["@type"])
                         }
                     }
                 })
                 if(!check){
-                    console.log(`[ ${expression} ] Tag missing from script \n`)
-                    callback(temp_script["@type"])
+                    this.verify.equal(expression,temp_script["@type"])
                 }
             });
         };

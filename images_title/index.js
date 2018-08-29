@@ -16,7 +16,9 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
                 var scripts = $("img")
                 scripts.map((index,val)=>{
                     if(val.name === "img"){
-                        this.assert.ok(val.attribs.title,val.attribs.src)
+                        this.verify.ok(val.attribs.title,`Title ${val.attribs.src}`)
+                        this.verify.ok(val.attribs.src,`Src ${val.attribs.src}`)
+                        this.verify.ok(val.attribs.alt,`Alt ${val.attribs.src}`)
                     }
                 })
             })

@@ -21,7 +21,7 @@ exports.structured_urls = {
     },
     "all_pages": {
         "url": "https://www.bewakoof.com",
-        "check": ["Organization"],
+        "check": ["Organization","Error"],
         "tags":"ALL PAGES"
     },
 }

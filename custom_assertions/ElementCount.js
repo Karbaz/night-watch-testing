@@ -17,8 +17,7 @@ ElementCount = function(selector,expression) {
     this.command = (callback) => {
         return this.api.source(function(result){
             $ = cheerio.load(result.value)
-            this.assert.ok(1)
-            this.assert.equal($(selector).length,expression);
+            this.verify.equal($(selector).length,expression);
         });
     };
 };
