@@ -14,7 +14,7 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
                 .waitForElementVisible('body', 1000)
                 .source(function(res){
                     current_query["check"].map((v,i)=>{
-                        browser.assert.CheckTitle(v)
+                        browser.assert.StructureData(v)
                     })
                 })
                 .pause(100)

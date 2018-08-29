@@ -1,3 +1,4 @@
+var liveDomain  = require("../global").liveDomain
 exports.structured_urls = {
     "category_page": {
         "url": "http://localhost:4000/cotm-collection",

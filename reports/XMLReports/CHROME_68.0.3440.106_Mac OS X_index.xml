@@ -1,20 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="2">
+            failures="4"
+            tests="5">
 
   <testsuite name="index"
-    errors="0" failures="0" hostname="" id="" package="index" skipped="0"
-    tests="2" time="7.935" timestamp="Mon, 27 Aug 2018 09:04:30 GMT">
+    errors="0" failures="4" hostname="" id="" package="index" skipped="0"
+    tests="5" time="11.12" timestamp="Wed, 29 Aug 2018 07:35:28 GMT">
   
-    <testcase name="2: CHECKING FOR BreadCrumb" classname="index" time="5.628" assertions="2">
+    <testcase name="5: ALL PAGES" classname="index" time="3.751" assertions="3">
+
+    
 
     
 
     
     </testcase>
   
-    <testcase name="1: CHECKING FOR BreadCrumb" classname="index" time="2.307" assertions="1">
+    <testcase name="4: MOBILE BRAND PAGE" classname="index" time="1.809" assertions="3">
+
+      <failure message="Failed [equal]: (0 == 1)">    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/custom_assertions/ElementCount.js:20:25)
+    at endReadableNT (_stream_readable.js:1106:12)
+    at process._tickCallback (internal/process/next_tick.js:178:19)</failure>
+
+      <failure message="Testing if element &lt;h1&gt; is present.">    at Object.4: MOBILE BRAND PAGE (/Users/arbazkhan/Desktop/node-seo/tags_counter/index.js:13:28)
+    at process._tickCallback (internal/process/next_tick.js:176:11)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="3: MOBILE PAGE" classname="index" time="1.696" assertions="3">
+
+      <failure message="Failed [equal]: (0 == 1)">    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/custom_assertions/ElementCount.js:20:25)
+    at endReadableNT (_stream_readable.js:1106:12)
+    at process._tickCallback (internal/process/next_tick.js:178:19)</failure>
+
+      <failure message="Testing if element &lt;h1&gt; is present.">    at Object.3: MOBILE PAGE (/Users/arbazkhan/Desktop/node-seo/tags_counter/index.js:13:28)
+    at process._tickCallback (internal/process/next_tick.js:176:11)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="2: CATEGORY PAGE" classname="index" time="1.860" assertions="3">
+
+      <failure message="Failed [equal]: (0 == 1)">    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/custom_assertions/ElementCount.js:20:25)
+    at endReadableNT (_stream_readable.js:1106:12)
+    at process._tickCallback (internal/process/next_tick.js:178:19)</failure>
+
+      <failure message="Testing if element &lt;h1&gt; is present.">    at Object.2: CATEGORY PAGE (/Users/arbazkhan/Desktop/node-seo/tags_counter/index.js:13:28)
+    at process._tickCallback (internal/process/next_tick.js:176:11)</failure>
+
+    
+    </testcase>
+  
+    <testcase name="1: PRODUCT PAGE" classname="index" time="2.006" assertions="3">
+
+      <failure message="Failed [equal]: (0 == 1)">    at Object.&lt;anonymous&gt; (/Users/arbazkhan/Desktop/node-seo/custom_assertions/ElementCount.js:20:25)
+    at endReadableNT (_stream_readable.js:1106:12)
+    at process._tickCallback (internal/process/next_tick.js:178:19)</failure>
+
+      <failure message="Testing if element &lt;h1&gt; is present.">    at Object.1: PRODUCT PAGE (/Users/arbazkhan/Desktop/node-seo/tags_counter/index.js:13:28)
+    at process._tickCallback (internal/process/next_tick.js:176:11)</failure>
 
     
     </testcase>

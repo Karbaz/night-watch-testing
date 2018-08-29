@@ -9,8 +9,8 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
             browser.url(current_query["url"]);
             browser.waitForElementVisible('body', 1000);
             browser.pause(100);
-            browser.assert.ElementCount("h1",1);
-            browser.assert.elementPresent("h1");
+            browser.verify.ElementCount("h1",1);
+            browser.verify.elementPresent("h1");
             browser.end()
         },
     }, seo_test_cases)

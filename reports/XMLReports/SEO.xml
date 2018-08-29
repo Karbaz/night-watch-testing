@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="0"
-            tests="2">
+            tests="9">
 
   <testsuite name="SEO"
-    errors="1" failures="0" hostname="" id="" package="SEO" skipped="1"
-    tests="2" time="0.005000" timestamp="Fri, 24 Aug 2018 07:03:13 GMT">
+    errors="1" failures="0" hostname="" id="" package="SEO" skipped="8"
+    tests="9" time="0.005000" timestamp="Wed, 29 Aug 2018 06:44:43 GMT">
   
-    <testcase name="HOME_PAGE" classname="SEO" time="0.005000" assertions="0">
+    <testcase name="BLOG" classname="SEO" time="0.005000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-        Error while running [SEO / HOME_PAGE]:
+        Error while running [SEO / BLOG]:
 
-  TypeError: browser.assert.element is not a function
-    at Object.HOME_PAGE (/Users/arbazkhan/Desktop/node-seo/seo/SEO.js:12:32)
+  TypeError: browser.verify.description is not a function
+    at Object.BLOG (/Users/arbazkhan/Desktop/node-seo/seo/SEO.js:13:32)
     at Module.call (/Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/arbazkhan/Desktop/node-seo/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/arbazkhan/Desktop/node-seo/node_modules/q/q.js:834:54)
@@ -30,6 +30,41 @@
   
 
   
+    
+    <testcase
+      name="CONTACT_US" classname="SEO">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="DELIGHTS" classname="SEO">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="COLOR_OF_THE_MONTH" classname="SEO">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="DESIGN_OF_THE_DAY" classname="SEO">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="MOBILE_PRODUCT_PAGE" classname="SEO">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="MOBILE_BRANDING_PAGE" classname="SEO">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="HOME_PAGE" classname="SEO">
+      <skipped />
+    </testcase>
     
     <testcase
       name="MOBILE_LANDING_PAGE" classname="SEO">

@@ -1,3 +1,4 @@
 module.exports = {
-    abortOnAssertionFailure: false
+    abortOnAssertionFailure: false,
+    liveDomain:"https://www.bewakoof.com/"
 };

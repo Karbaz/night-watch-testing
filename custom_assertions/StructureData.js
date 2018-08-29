@@ -1,7 +1,7 @@
     var cheerio = require("cheerio");
     var structured_urls = require("../structured_data/urls");
 
-    CheckTitle = function(expression) {
+    StructureData = function(expression) {
         this.message = `Structure Data Contains ${expression}`;
 
         this.expected = expression;
@@ -35,4 +35,4 @@
             });
         };
     };
-    module.exports.assertion = CheckTitle;
+    module.exports.assertion = StructureData;
