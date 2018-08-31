@@ -1,8 +1,14 @@
-var assert = require("assert")
 var seo_urls = require("./urls")
-var seo_test_cases = {};
+var testCase = {};
+let test_case_failure_collections = [];
+var checkerForTestCaseFailure = require("../helper").checkerForTestCaseFailure;
+var sendSuccessSlackNotification = require("../SlackNotification").sendSuccessSlackNotification
+var sendFailureSlackNotification = require("../SlackNotification").sendFailureSlackNotification
+var chanelConfig = require("../SlackNotification").chanelConfig
+
 seo_urls.seo_urls.map((value, index) => {
     Object.keys(value).map((testValue, testIndex) => {
+        let v = JSON.parse(JSON.stringify(testValue))
         let copy = Object.assign({
             [value[testValue]['tag']]: function (browser) {
                 browser.resizeWindow(400, 400);
@@ -13,9 +19,30 @@ seo_urls.seo_urls.map((value, index) => {
                 browser.pause(100);
                 browser.end();
             },
-        }, seo_test_cases)
-        seo_test_cases = copy;
+            afterEach: function (browser, done) {
+                console.log(browser.currentTest.name,'++++++++++++++++++++++++++++++++++++++++++++++++')
+                checkerForTestCaseFailure(browser, browser.currentTest.name, function (error, response) {
+                    if (response) test_case_failure_collections.push(response)
+                })
+                done()
+            },
+            after: function (browser, done) {
+                if (browser.currentTest.results && browser.currentTest.results.failed && browser.currentTest.results.failed > 0) {
+                    // console.log(test_case_failure_collections,'[][][][][][]',browser.currentTest.results)
+                    sendFailureSlackNotification({
+                        channelId: chanelConfig["automation-testing"].channelId,
+                        testCase: test_case_failure_collections,
+                        webHook:chanelConfig["automation-testing"].webHook
+                    })
+                    //message
+                    //failure
+                    // console.log(test_case_failure_collections,'][][][')
+                }
+                done()
+            }
+        }, testCase)
+        testCase = copy;
     })
 })
 
-exports.module = seo_test_cases;
+exports.module = testCase;
