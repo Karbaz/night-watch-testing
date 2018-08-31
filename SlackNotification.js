@@ -2,7 +2,7 @@ var Slack = require('slack-node');
 
 exports.chanelConfig = {
     ["automation-testing"]: {
-        webHook: "https://hooks.slack.com/services/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",
+        webHook: "https://hooks.slack.com/services/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",
         channelId: "#automation-testing"
     }
 }
@@ -16,7 +16,7 @@ exports.sendFailureSlackNotification = ({
     let slack = new Slack();
     slack.setWebhook(webHook);
     testCase.map((v, i) => {
-        SlackTestString:string += `${v.failure} \n \n`
+        SlackTestString += `${v.failure} \n \n`
     })
     slack.webhook({
         channel: `${channelId}`,
