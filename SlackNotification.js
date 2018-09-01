@@ -27,7 +27,7 @@ exports.sendSuccessSlackNotification = ({
     webhook.send({
             "text": "Test Cases Completed",
             "attachments": [{
-                "color": "danger",
+                "color": "good",
                 "author_name": "Testing Bot",
                 "title": "Test Pass",
                 "text": "All Test Cases Pass For ",
@@ -48,8 +48,7 @@ exports.sendFailureSlackNotification = ({
 }) => {
     const webhook = new IncomingWebhook(url);
     let SlackTestString = "";
-    failTestCasesArray.map((value,index)=> SlackTestString += `${value.failure} \n \n`)
-    console.log(SlackTestString)
+    failTestCasesArray.map((value, index) => SlackTestString += `${value.failure} \n \n`)
     webhook.send({
             "text": "Automation Testing Fails",
             "attachments": [{

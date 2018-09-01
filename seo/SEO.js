@@ -26,16 +26,17 @@ seo_urls.seo_urls.map((value, index) => {
                 done()
             },
             after: function (browser, done) {
+                console.log(browser.currentTest.results, "------------------------")
                 if (browser.currentTest.results && browser.currentTest.results.failed && browser.currentTest.results.failed > 0) {
                     sendFailureSlackNotification({
                         channelId: chanelConfig["automation-testing"].channelId,
                         failTestCasesArray: test_case_failure_collections,
-                        webHook:chanelConfig["automation-testing"].webHook,
+                        webHook: chanelConfig["automation-testing"].webHook,
                     })
-                }else{
+                } else {
                     sendSuccessSlackNotification({
-                        channelId:chanelConfig["automation-testing"].channelId,
-                        testFile:"Seo.js"
+                        channelId: chanelConfig["automation-testing"].channelId,
+                        testFile: "Seo.js"
                     })
                 }
                 done()

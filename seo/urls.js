@@ -2,7 +2,7 @@ var liveDomain  = require("../global").liveDomain
 exports.seo_urls = [{
     "mobile": {
         "url": `${liveDomain}/mobile-covers-india`,
-        "title": "Mobile Covers – Buy Phone Covers at ₹199 | Bewakoof.comdomin",
+        "title": "Mobile Covers – Buy Phone Covers at ₹199 | Bewakoof.com",
         "desc": "You'd want to buy a new Mobile Cover every day when you can get Phone Covers starting at ₹199 with 300+ printed Mobile Back Cover options. These Phone Cases are pocket-friendly yet super-sturdy & stylish. So grab Mobile Cases & Phone Covers Online at Bewakoof.com! ✓COD ✓Free Shipping ✓Easy Returns",
         "tag": "MOBILE_LANDING_PAGE"
     },
