@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="9">
+            failures="1"
+            tests="2">
 
   <testsuite name="SEO"
-    errors="0" failures="0" hostname="" id="" package="SEO" skipped="0"
-    tests="9" time="20.64" timestamp="Wed, 29 Aug 2018 07:20:29 GMT">
+    errors="0" failures="1" hostname="" id="" package="SEO" skipped="0"
+    tests="2" time="7.958" timestamp="Sat, 01 Sep 2018 04:28:54 GMT">
   
-    <testcase name="BLOG" classname="SEO" time="3.838" assertions="3">
+    <testcase name="HOME_PAGE" classname="SEO" time="5.356" assertions="3">
 
     
 
@@ -16,72 +16,10 @@
     
     </testcase>
   
-    <testcase name="CONTACT_US" classname="SEO" time="1.725" assertions="3">
+    <testcase name="MOBILE_LANDING_PAGE" classname="SEO" time="2.602" assertions="3">
 
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="DELIGHTS" classname="SEO" time="2.114" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="COLOR_OF_THE_MONTH" classname="SEO" time="2.477" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="DESIGN_OF_THE_DAY" classname="SEO" time="2.067" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="MOBILE_PRODUCT_PAGE" classname="SEO" time="1.916" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="MOBILE_BRANDING_PAGE" classname="SEO" time="2.055" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="HOME_PAGE" classname="SEO" time="2.273" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="MOBILE_LANDING_PAGE" classname="SEO" time="2.179" assertions="3">
-
-    
+      <failure message="Testing if attribute content of &lt;meta[property=&#39;og:title&#39;]&gt; equals &#34;Mobile Covers – Buy Phone Covers at ₹199 | Bewakoof.comdomin&#34;.">    at Object.MOBILE_LANDING_PAGE (/Users/arbazkhan/Desktop/node-seo/seo/SEO.js:17:32)
+    at process._tickCallback (internal/process/next_tick.js:176:11)</failure>
 
     
 
