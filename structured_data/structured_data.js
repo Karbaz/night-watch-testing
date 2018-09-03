@@ -1,6 +1,5 @@
 var structured_urls = require("./urls")
 var cheerio = require("cheerio")
-var assert = require('chai').assert
 var seo_test_cases = {};
 
 

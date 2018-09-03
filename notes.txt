@@ -38,3 +38,8 @@ seo_urls.seo_urls.map((value,index)=>{
 })
 
 exports.module= seo_test_cases;
+
+
+node npm for slack notification
+
+https://github.com/slackapi/node-slack-sdk

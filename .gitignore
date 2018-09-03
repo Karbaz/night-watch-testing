@@ -1,5 +1,7 @@
 node_modules/
 
-log/selenium-debug.log
+log/*
 
 reports/XMLReports/
+
+reports/XMLReports/*
