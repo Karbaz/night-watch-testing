@@ -16,16 +16,7 @@
   "devDependencies": {
     "npm-run-all": "^4.1.3"
   },
-  "scripts": {
-    "start_bread_crumb": "node nightwatch Breadcrumb/index.js -e chrome",
-    "start_canonical_link": "node nightwatch canonical_link/index.js -e chrome",
-    "start_img_tags": "node nightwatch images_title/index.js -e chrome",
-    "start_next_prev": "node nightwatch.js next_prev/index.js -e chrome",
-    "start_seo": "node nightwatch.js seo/SEO.js -e chrome",
-    "start_structure_data": "node nightwatch structured_data/structured_data.js -e chrome",
-    "start_tag_counter": " node nightwatch tags_counter/index.js -e chrome ",
-    "start_all": "npm-run-all -s --continue-on-error start_structure_data start_canonical_link start_img_tags start_next_prev start_seo start_structure_data start_tag_counter"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
