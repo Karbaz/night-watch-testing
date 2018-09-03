@@ -35,7 +35,7 @@ seo_urls.seo_urls.map((value, index) => {
                 } else {
                     sendSuccessSlackNotification({
                         chanel_id: chanelConfig["automation-testing"].chanel_id,
-                        testFile: "Seo.js"
+                        
                     })
                 }
                 done()

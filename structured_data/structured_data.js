@@ -40,7 +40,7 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
             } else {
                 sendSuccessSlackNotification({
                     chanel_id: chanelConfig["automation-testing"].chanel_id,
-                    testFile: "Seo.js"
+                    
                 })
             }
             done()
