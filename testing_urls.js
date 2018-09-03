@@ -70,52 +70,52 @@ exports.urls = {
     "CANONICAL": {
         "product_page": {
             "url": `${liveDomain}/p/pine-green-boyfriend-t-shirt-for-women?src=collection`,
-            "tags": "PRODUCT PAGE",
+            "tag": "PRODUCT PAGE",
             "CanonicalLink": "https://www.bewakoof.com/p/pine-green-boyfriend-t-shirt-for-women"
         },
         "category_page": {
             "url": `${liveDomain}/women-new-arrivals-collection`,
-            "tags": "CATEGORY PAGE",
+            "tag": "CATEGORY PAGE",
             "CanonicalLink": "https://www.bewakoof.com/women-new-arrivals-collection"
         },
         "color_of_the_month": {
             "url": `${liveDomain}/cotm-collection`,
-            "tags": "COLOR OF THE MONTH",
+            "tag": "COLOR OF THE MONTH",
             "CanonicalLink": "cotm-collection"
         },
         "home": {
             "url": `${liveDomain}`,
-            "tags": "BEWAKOOF HOME PAGE",
+            "tag": "BEWAKOOF HOME PAGE",
             "CanonicalLink": "https://www.bewakoof.com"
         },
     },
 
 
 
-    "IMAGES_TITLE_ALT_TAGS": {
+    "IMAGES_TITLE_ALT_TAG": {
         "product_page": {
             "url": `${liveDomain}/p/pine-green-boyfriend-t-shirt-for-women?src=collection`,
             "check": ["BreadcrumbList", "Organization", "Product"],
-            "tags": "PRODUCT PAGE"
+            "tag": "PRODUCT PAGE"
         },
         "category_page": {
             "url": `${liveDomain}/women-new-arrivals-collection`,
             "check": ["BreadcrumbList", "Organization"],
-            "tags": "CATEGORY PAGE"
+            "tag": "CATEGORY PAGE"
         },
         "mobile_page": {
             "url": `${liveDomain}/mobile-covers-india`,
             "check": ["BreadcrumbList", "Organization"],
-            "tags": "MOBILE PAGE"
+            "tag": "MOBILE PAGE"
         },
         "mobile_brand_page": {
             "url": `${liveDomain}/mobile-covers-india/apple-cases-back-covers`,
             "check": ["BreadcrumbList", "Organization"],
-            "tags": "MOBILE BRAND PAGE"
+            "tag": "MOBILE BRAND PAGE"
         },
         "all_pages": {
             "url": `${liveDomain}`,
-            "tags": "ALL PAGES"
+            "tag": "ALL PAGES"
         },
     },
 
@@ -124,17 +124,17 @@ exports.urls = {
     "NEXT_AND_PREV_LINK": {
         "Link_1": {
             "url": `${liveDomain}/women-new-arrivals-collection`,
-            "tags": "CHECKING FOR NEXT TAG",
+            "tag": "CHECKING FOR NEXT TAG",
             "testCase": ["next", "prev"]
         },
         "Link_2": {
             "url": `${liveDomain}/women-new-arrivals-collection/default/2`,
-            "tags": "CHECKING FOR NEXT TAG",
+            "tag": "CHECKING FOR NEXT TAG",
             "testCase": ["prev", "next"]
         },
         "Link_3": {
             "url": `${liveDomain}/women-new-arrivals-collection/default/3`,
-            "tags": "CHECKING FOR NEXT TAG",
+            "tag": "CHECKING FOR NEXT TAG",
             "testCase": ["prev", "next"]
         }
     },
@@ -145,27 +145,27 @@ exports.urls = {
         "product_page": {
             "url": `${liveDomain}/p/pine-green-boyfriend-t-shirt-for-women?src=collection`,
             "check": ["BreadcrumbList", "Organization", "Product"],
-            "tags": "PRODUCT PAGE"
+            "tag": "PRODUCT PAGE"
         },
         "category_page": {
             "url": `${liveDomain}/women-new-arrivals-collection`,
             "check": ["BreadcrumbList", "Organization"],
-            "tags": "CATEGORY PAGE"
+            "tag": "CATEGORY PAGE"
         },
         "mobile_page": {
             "url": `${liveDomain}/mobile-covers-india`,
             "check": ["BreadcrumbList", "Organization"],
-            "tags": "MOBILE PAGE"
+            "tag": "MOBILE PAGE"
         },
         "mobile_brand_page": {
             "url": `${liveDomain}/mobile-covers-india/apple-cases-back-covers`,
             "check": ["BreadcrumbList", "Organization"],
-            "tags": "MOBILE BRAND PAGE"
+            "tag": "MOBILE BRAND PAGE"
         },
         "all_pages": {
             "url": `${liveDomain}`,
             "check": ["Organization", "Error"],
-            "tags": "ALL PAGES"
+            "tag": "ALL PAGES"
         },
     },
 
@@ -174,23 +174,39 @@ exports.urls = {
     "TAG_COUNTER": {
         "product_page": {
             "url": `${liveDomain}/p/pine-green-boyfriend-t-shirt-for-women?src=collection`,
-            "tags": "PRODUCT PAGE"
+            "tag": "PRODUCT PAGE"
         },
         "category_page": {
             "url": `${liveDomain}/women-new-arrivals-collection`,
-            "tags": "CATEGORY PAGE"
+            "tag": "CATEGORY PAGE"
         },
         "mobile_page": {
             "url": `${liveDomain}/mobile-covers-india`,
-            "tags": "MOBILE PAGE"
+            "tag": "MOBILE PAGE"
         },
         "mobile_brand_page": {
             "url": `${liveDomain}/mobile-covers-india/apple-cases-back-covers`,
-            "tags": "MOBILE BRAND PAGE"
+            "tag": "MOBILE BRAND PAGE"
         },
         "all_pages": {
             "url": `${liveDomain}`,
-            "tags": "ALL PAGES"
+            "tag": "ALL PAGES"
         },
-    }
+
+    },
+
+
+    
+    "BREADCRUMB": {
+        "category_page": {
+            "url": `${liveDomain}/cotm-collection`,
+            "tag": "CHECKING FOR BreadCrumb",
+            "nos_of_breadCrumb_tags": 2
+        },
+        "product_page": {
+            "url": `${liveDomain}/p/pine-green-plain-mens-t-shirt?src=collection`,
+            "tag": "CHECKING FOR BreadCrumb",
+            "nos_of_breadCrumb_tags": 4
+        }
+    },
 }

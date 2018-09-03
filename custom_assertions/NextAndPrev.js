@@ -1,5 +1,5 @@
 var cheerio = require("cheerio");
-var structured_urls = require("../structured_data/urls");
+// var structured_urls = require("../structured_data/urls");
 
 NextAndPrev = function (expression) {
     this.message = `Searching for Links  ======================== ${expression}`;
@@ -28,7 +28,7 @@ NextAndPrev = function (expression) {
                 }
             })
             if (!check) {
-                this.verify.equal(expression,valueCan["attribs"]["rel"])
+                this.verify.equal(expression,`Cannot Find this ${expression}  `)
             }
         });
     };

@@ -1,7 +1,7 @@
 {
     "test_workers": {
       "enabled": true,
-      "workers": 3
+      "workers": 10
     },
     "src_folders": ["tests"],
     "output_folder": "reports/XMLReports",
