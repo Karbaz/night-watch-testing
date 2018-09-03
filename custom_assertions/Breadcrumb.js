@@ -1,5 +1,5 @@
 var cheerio = require("cheerio");
-var structured_urls = require("../Breadcrumb/urls");
+// var structured_urls = require("../Breadcrumb/urls");
 
 Breadcrumb = function (expression) {
     this.message = `Expected Number Of BreadCrumb ${expression}`;
@@ -20,7 +20,9 @@ Breadcrumb = function (expression) {
             var scripts = $("#pd_bread")
             if (scripts[0] && scripts[0]["children"]) {
                 let counter = scripts[0]["children"].length
-                callback(counter)
+                this.verify.equal(counter.length,expression);
+            }else{
+                this.verify.ok(false)
             }
         });
     };

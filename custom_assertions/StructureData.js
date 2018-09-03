@@ -1,5 +1,5 @@
     var cheerio = require("cheerio");
-    var structured_urls = require("../structured_data/urls");
+    // var structured_urls = require("../structured_data/urls");
 
     StructureData = function(expression) {
         this.message = `Structure Data Contains ${expression}`;

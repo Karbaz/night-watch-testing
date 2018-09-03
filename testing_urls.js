@@ -121,7 +121,6 @@ exports.urls = {
         "Link_1": {
             "url": `${liveDomain}/women-new-arrivals-collection`,
             "tag": "CHECKING FOR NEXT TAG",
-            "testCase": ["next"]
         },
         "Link_2": {
             "url": `${liveDomain}/women-new-arrivals-collection/default/2`,
@@ -191,7 +190,7 @@ exports.urls = {
 
     },
 
-
+    
 
     "BREADCRUMB": {
         "category_page": {

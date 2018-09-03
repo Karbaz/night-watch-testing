@@ -1,5 +1,5 @@
 var cheerio = require("cheerio");
-var structured_urls = require("../structured_data/urls");
+// var structured_urls = require("../structured_data/urls");
 
 CanonicalLink = function (expression) {
     this.message = `Searching for Canonical Link in ${expression}`;
