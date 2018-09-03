@@ -26,7 +26,6 @@ seo_urls.seo_urls.map((value, index) => {
                 done()
             },
             after: function (browser, done) {
-                console.log(browser.currentTest.results, "------------------------")
                 if (browser.currentTest.results && browser.currentTest.results.failed && browser.currentTest.results.failed > 0) {
                     sendFailureSlackNotification({
                         channelId: chanelConfig["automation-testing"].channelId,

@@ -5,9 +5,9 @@
 
   <testsuite name="index"
     errors="0" failures="1" hostname="" id="" package="index" skipped="0"
-    tests="3" time="8.992" timestamp="Mon, 03 Sep 2018 05:53:33 GMT">
+    tests="3" time="10.16" timestamp="Mon, 03 Sep 2018 06:42:14 GMT">
   
-    <testcase name="3: CHECKING FOR NEXT TAG" classname="index" time="3.935" assertions="3">
+    <testcase name="3: CHECKING FOR NEXT TAG" classname="index" time="4.633" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="2: CHECKING FOR NEXT TAG" classname="index" time="2.405" assertions="3">
+    <testcase name="2: CHECKING FOR NEXT TAG" classname="index" time="2.929" assertions="3">
 
     
 
@@ -25,7 +25,7 @@
     
     </testcase>
   
-    <testcase name="1: CHECKING FOR NEXT TAG" classname="index" time="2.652" assertions="3">
+    <testcase name="1: CHECKING FOR NEXT TAG" classname="index" time="2.597" assertions="3">
 
     
 

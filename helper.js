@@ -9,7 +9,7 @@ exports.checkerForTestCaseFailure = (assertionObject, tagname, cb) => {
             if (assertionFail && assertionFail.length > 0) {
                 assertionFail.map((value, index) => {
                     if (value.failure && value.fullMsg) {
-                        cb(null, value)
+                        cb(null, {...value,tagname:testCaseTag})
                     }
                 })
             }

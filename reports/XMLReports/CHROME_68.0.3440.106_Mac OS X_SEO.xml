@@ -5,9 +5,9 @@
 
   <testsuite name="SEO"
     errors="0" failures="0" hostname="" id="" package="SEO" skipped="0"
-    tests="2" time="9.096" timestamp="Sat, 01 Sep 2018 07:58:45 GMT">
+    tests="2" time="4.939" timestamp="Mon, 03 Sep 2018 06:25:24 GMT">
   
-    <testcase name="HOME_PAGE" classname="SEO" time="5.995" assertions="3">
+    <testcase name="HOME_PAGE" classname="SEO" time="3.317" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="MOBILE_LANDING_PAGE" classname="SEO" time="3.101" assertions="3">
+    <testcase name="MOBILE_LANDING_PAGE" classname="SEO" time="1.622" assertions="3">
 
     
 

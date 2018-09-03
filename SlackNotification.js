@@ -9,28 +9,18 @@ exports.chanelConfig = {
     }
 }
 
-
-// const webhook = new IncomingWebhook(url);
-// webhook.send('Hello there', function (err, res) {
-//     if (err) {
-//         console.log('Error:', err);
-//     } else {
-//         console.log('Message sent: ', res);
-//     }
-// });
-
 exports.sendSuccessSlackNotification = ({
     channelId,
     testFile
 }) => {
     const webhook = new IncomingWebhook(url);
     webhook.send({
-            "text": "Test Cases Completed",
+            "text": "Automation Testing Completed",
             "attachments": [{
                 "color": "good",
                 "author_name": "Testing Bot",
-                "title": "Test Pass",
-                "text": "All Test Cases Pass For ",
+                "title": "Test Result",
+                "text": "All Test Cases Pass For "
             }]
         },
         function (err, res) {
@@ -48,7 +38,7 @@ exports.sendFailureSlackNotification = ({
 }) => {
     const webhook = new IncomingWebhook(url);
     let SlackTestString = "";
-    failTestCasesArray.map((value, index) => SlackTestString += `${value.failure} \n \n`)
+    failTestCasesArray.map((value, index) => SlackTestString += `[Message]: ${value.message}\n[Failure Message]: ${value.failure}\n[Tag Name]: ${value.tagname} \n \n`)
     webhook.send({
             "text": "Automation Testing Fails",
             "attachments": [{
