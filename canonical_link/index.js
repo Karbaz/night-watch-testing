@@ -28,7 +28,7 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
         after: function (browser, done) {
             if (browser.currentTest.results && browser.currentTest.results.failed && browser.currentTest.results.failed > 0) {
                 sendFailureSlackNotification({
-                    chanel_id: chanelConfig["automation-testing"].chanel_id,
+                    chanel_id: chanelConfig["automation-testing"].chanel_id, 
                     failTestCasesArray: test_case_failure_collections,
                     webHook: chanelConfig["automation-testing"].webHook,
                 })
