@@ -1,28 +1,25 @@
-var structured_urls = require("./urls")
-var cheerio = require("cheerio")
-var seo_test_cases = {};
+var testCaseUrls = require("../../testing_urls").urls.STRUCTURE_DATA
 let test_case_failure_collections = [];
-var checkerForTestCaseFailure = require("../helper").checkerForTestCaseFailure;
-var sendSuccessSlackNotification = require("../SlackNotification").sendSuccessSlackNotification
-var sendFailureSlackNotification = require("../SlackNotification").sendFailureSlackNotification
-var chanelConfig = require("../SlackNotification").chanelConfig
+var checkerForTestCaseFailure = require("../../helper").checkerForTestCaseFailure;
+var sendSuccessSlackNotification = require("../../SlackNotification").sendSuccessSlackNotification
+var sendFailureSlackNotification = require("../../SlackNotification").sendFailureSlackNotification
+var chanelConfig = require("../../SlackNotification").chanelConfig
+var cheerio = require("cheerio")
 
-
-Object.keys(structured_urls.structured_urls).map((value, index) => {
-    let current_query = structured_urls.structured_urls[value]
-    let copy = Object.assign({
-        [`${index+1}: ${current_query["tags"]}`]: function (browser) {
+let actualTestCase = {}
+Object.keys(testCaseUrls).map((value, index) => {
+    let testDetails = testCaseUrls[value]
+    let copy_test = Object.assign({
+        [`${index+1} TESTING SEO FOR ${testDetails.tag}`]: function (browser) {
             browser
-                .resizeWindow(400, 400)
-                .url(current_query["url"])
+                .url(testDetails.url)
                 .waitForElementVisible('body', 1000)
                 .source(function (res) {
-                    current_query["check"].map((v, i) => {
+                    testDetails["check"].map((v, i) => {
                         browser.assert.StructureData(v)
                     })
                 })
-                .pause(100)
-                .end()
+                .end();
         },
         afterEach: function (browser, done) {
             checkerForTestCaseFailure(browser, browser.currentTest.name, function (error, response) {
@@ -39,15 +36,14 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
                 })
             } else {
                 sendSuccessSlackNotification({
-                    chanel_id: chanelConfig["automation-testing"].chanel_id,
-                    
+                    chanel_id: chanelConfig["automation-testing"].chanel_id
                 })
             }
             done()
         }
-    }, seo_test_cases)
-    seo_test_cases = copy;
+
+    }, actualTestCase)
+    actualTestCase = copy_test
 })
 
-
-exports.module = seo_test_cases;
+exports.module = actualTestCase

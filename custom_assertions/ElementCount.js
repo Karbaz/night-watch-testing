@@ -1,5 +1,5 @@
 var cheerio = require("cheerio");
-var structured_urls = require("../tags_counter/urls");
+// var structured_urls = require("../tags_counter/urls");
 
 ElementCount = function(selector,expression) {
     this.message = `Checking Element ${selector} count to be ${expression}`;
