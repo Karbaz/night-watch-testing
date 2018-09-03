@@ -8,6 +8,11 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
             browser.resizeWindow(400, 400);
             browser.url(current_query["url"]);
             browser.waitForElementVisible('body', 1000);
+            browser.source(function (res) {
+                current_query["testCase"].map((v, i) => {
+                    browser.assert.NextAndPrev(v)
+                })
+            })
             browser.pause(100);
             browser.end()
         },
