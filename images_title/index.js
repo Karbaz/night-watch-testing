@@ -38,13 +38,13 @@ Object.keys(structured_urls.structured_urls).map((value, index) => {
         after: function (browser, done) {
             if (browser.currentTest.results && browser.currentTest.results.failed && browser.currentTest.results.failed > 0) {
                 sendFailureSlackNotification({
-                    channelId: chanelConfig["automation-testing"].channelId,
+                    chanel_id: chanelConfig["automation-testing"].chanel_id,
                     failTestCasesArray: test_case_failure_collections,
                     webHook: chanelConfig["automation-testing"].webHook,
                 })
             } else {
                 sendSuccessSlackNotification({
-                    channelId: chanelConfig["automation-testing"].channelId,
+                    chanel_id: chanelConfig["automation-testing"].chanel_id,
                     testFile: "Seo.js"
                 })
             }

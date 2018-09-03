@@ -5,12 +5,12 @@ const url = "https://hooks.slack.com/services/T635D99QD/BCKAA9AV9/2nUP8HsPIEWA5N
 exports.chanelConfig = {
     ["automation-testing"]: {
         webHook: "https://hooks.slack.com/services/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",
-        channelId: "#automation-testing"
+        chanel_id: "#automation-testing"
     }
 }
 
 exports.sendSuccessSlackNotification = ({
-    channelId,
+    chanel_id,
     testFile
 }) => {
     const webhook = new IncomingWebhook(url);
@@ -33,7 +33,7 @@ exports.sendSuccessSlackNotification = ({
 }
 
 exports.sendFailureSlackNotification = ({
-    channelId,
+    chanel_id,
     failTestCasesArray
 }) => {
     const webhook = new IncomingWebhook(url);
