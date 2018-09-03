@@ -5,9 +5,9 @@
 
   <testsuite name="structured_data"
     errors="0" failures="1" hostname="" id="" package="structured_data" skipped="0"
-    tests="5" time="10.84" timestamp="Mon, 03 Sep 2018 06:43:36 GMT">
+    tests="5" time="11.20" timestamp="Mon, 03 Sep 2018 07:00:49 GMT">
   
-    <testcase name="5: ALL PAGES" classname="structured_data" time="3.572" assertions="3">
+    <testcase name="5: ALL PAGES" classname="structured_data" time="3.383" assertions="3">
 
     
 
@@ -18,7 +18,7 @@
     
     </testcase>
   
-    <testcase name="4: MOBILE BRAND PAGE" classname="structured_data" time="1.769" assertions="3">
+    <testcase name="4: MOBILE BRAND PAGE" classname="structured_data" time="1.970" assertions="3">
 
     
 
@@ -27,7 +27,7 @@
     
     </testcase>
   
-    <testcase name="3: MOBILE PAGE" classname="structured_data" time="1.815" assertions="3">
+    <testcase name="3: MOBILE PAGE" classname="structured_data" time="1.961" assertions="3">
 
     
 
@@ -36,7 +36,7 @@
     
     </testcase>
   
-    <testcase name="2: CATEGORY PAGE" classname="structured_data" time="1.845" assertions="3">
+    <testcase name="2: CATEGORY PAGE" classname="structured_data" time="1.975" assertions="3">
 
     
 
@@ -45,7 +45,7 @@
     
     </testcase>
   
-    <testcase name="1: PRODUCT PAGE" classname="structured_data" time="1.835" assertions="4">
+    <testcase name="1: PRODUCT PAGE" classname="structured_data" time="1.907" assertions="4">
 
     
 
